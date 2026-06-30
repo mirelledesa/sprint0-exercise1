@@ -1,5 +1,8 @@
 # sprint0-exercise1
-Application analysis
+**Analysis de sitios web**
+
+## 🛠 Tecnologies:
+- Solamente Github
 
 ## Twitter.com
 | criterio | description |
