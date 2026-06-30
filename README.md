@@ -41,3 +41,13 @@ Interacción con servidor:
 | Comportamiento de navegación: | (MPA) Multiples paginas con recarga completa del navegador en cada transición de sección. |
 | Tiempo de carga: | FCP: 1.4s y LCP: 2.8s (medido con PageSpeed Insights) |
 | Interacción con servidor: | Server-rendered (SSR): El servidor procesa el código PHP de WordPress, consulta la base de datos MySQL para traer los posts y genera el HTML final que se envía al usuario. Si se desactiva JavaScript, el contenido de los textos y las imágenes sigue visible. |
+
+## leerob.com
+| criterio | description |
+|----------|---------|
+| Tipología: | Estatico / No PWA |
+| URL: | :https://leerob.com/ |
+| Evidencias técnicas: | El sitio está compuesto por archivos HTML, CSS y JS pre-renderizados (Static Site Generation). No realiza consultas a bases de datos en tiempo de ejecución ni genera contenido dinámico en el servidor. No tiene Service Workers configurados para funcionar offline como una PWA. |
+| Comportamiento de navegación: | Navegación instantánea entre secciones. Al ser contenido estático, la estructura y los textos cargan de golpe sin saltos de contenido. |
+| Tiempo de carga: | FCP: 0.3s y LCP: 0.5s (medido con PageSpeed Insights) |
+| Interacción con servidor: | Servido directamente desde una red de distribución de contenido (CDN). El servidor solo entrega los archivos físicos listos; no hay procesamiento backend ni intercambio de datos dinámicos. Si se desactiva JavaScript, el sitio sigue siendo 100% legible. |
